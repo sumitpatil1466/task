@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        header {
+            background-color: aqua;
+            color: black;
+            height: 50px;
+            padding-top: 10px;
+
+        }
+
+        nav {
+            padding-top: 10px;
+
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+        }
+
+        li a {
+            text-decoration: none;
+            padding: 20px 15px;
+            color: rgb(28, 27, 27);
+        }
+
+        div img {
+            width: 100%;
+            height: 500px;
+
+        }
+
+        #main {
+            display: flex;
+        }
+
+        .a img {
+            flex: 10;
+
+        }
+
+        .b img {
+            flex: 10;
+
+        }
+
+        .c img {
+            flex: 10;
+
+        }
+
+        #contact {
+            display: flex;
+        }
+
+        .map {
+            flex: 50%;
+            background-color: aqua;
+        }
+
+        .video {
+            flex: 50%;
+
+        }
+
+
+        footer {
+            height: 50px;
+            text-align: center;
+            padding-top: 20px;
+            color: darkorange;
+            background-color: black;
+            clear: both;
+        }
+
+        @media (max-width:800p-x) {
+
+            #main,
+            #contact {
+                flex-direction: column;
+            }
+
+            li {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center; color: red;">HEADER</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#aboutus">ABOUT US</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#gallery">GALLERY</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+
+        </ul>
+    </nav>
+    <div>
+        <img src="assets/images/pexels-photo-1525041.jpeg" alt="">
+    </div>
+    <div id="main">
+        <div class="a">
+            <img src="assets/images/pexels-photo-2162442.jpeg" alt="">
+        </div>
+        <div class="b">
+            <img src="assets/images/pexels-photo-1632780.jpeg" alt="">
+        </div>
+        <div class="c">
+            <img src="assets/images/pexels-photo-1213447.jpeg" alt="">
+        </div>
+    </div>
+    <section id="contact">
+        <div class="video">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/es4x5R-rV9s"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+        <div class="video">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/t0Q2otsqC4I"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+        </div>
+
+    </section>
+    <section id="contact">
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15286.692782202894!2d74.23764122399774!3d16.693229315967777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1003e8dd18f77%3A0x8145dfbd008c138d!2sRajarampuri%2C%20Kolhapur%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1681112724294!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    <div class="map">
+        <center>
+        <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif;" >Registration Form</h1><br><br>
+        <label>First Name</label>
+        <input type="text" placeholder="First Name"> <br><br>
+        <label>Last Name</label>
+        <input type="text" placeholder="Last Name"> <br><br>
+        <label>Email ID</label>
+        <input type="email" placeholder="Enter Email "> <br><br>
+        <label>Gender </label>
+        <label><input type="radio" name="gender"> Male</label>
+        <label><input type="radio" name="gender"> Female</label>
+        <label><input type="radio" name="gender"> Other</label> <br><br>
+        <label>Address </label>
+        <textarea rows="5" cols="25">
+
+        </textarea> <br><br>
+        <label>City </label>
+        <select>
+            <option>--Select--</option>
+            <option>Pune</option>
+            <option>Kolhapur</option>
+            <option>Satara</option>
+            <option>Mumbai</option>
+
+        </select> <br><br>
+        <input type="submit">
+        <input type="reset">
+    </center>
+
+    </div>
+</section>
+
+    <footer>
+        <h2>FOOTER</h2>
+    </footer>
+
+</body>
+
+</html>
